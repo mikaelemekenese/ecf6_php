@@ -78,11 +78,11 @@
                 <input type="text" class="form-control" name="admin_id" value="<?php echo $post['admin_id'] ?>" id="admin_id">
             </div>
             <div class="form-group">
-                <label for="cat_id">Admin</label>
+                <label for="cat_id">Catégorie</label>
                 <input type="text" class="form-control" name="cat_id" value="<?php echo $post['cat_id'] ?>" id="cat_id">
             </div>
             <div class="form-group">
-                <label for="tag_id">Admin</label>
+                <label for="tag_id">Tag</label>
                 <input type="text" class="form-control" name="tag_id" value="<?php echo $post['tag_id'] ?>" id="tag_id">
             </div>
             <div class="form-group">
