@@ -89,7 +89,7 @@ footer p {
 .home-buttons > div > i > h3 {
   color: black;
 }
-.read .create-livre {
+.read .create-post {
   display: inline-block;
   text-decoration: none;
   background-color: #38b673;
@@ -99,7 +99,7 @@ footer p {
   padding: 10px 15px;
   margin: 15px 0;
 }
-.read .create-livre:hover {
+.read .create-post:hover {
   background-color: #32a367;
 }
 .create form input {
