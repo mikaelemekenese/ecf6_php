@@ -15,4 +15,4 @@
 
 <?php echo template_header('Catégories'); ?>
 
-<?php echo template_footer(); ?>
+<?php echo template_footer(); ?>lkhdmlhn
