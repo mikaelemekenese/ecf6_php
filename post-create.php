@@ -21,7 +21,7 @@
 
 		$titre = isset($_POST['titre']) ? htmlspecialchars($_POST['titre']) : '';
 		$contenu = isset($_POST['contenu']) ? htmlspecialchars($_POST['contenu']) : '';
-        $date_publication = isset($_POST['date_publication']) ? htmlspecialchars($_POST['date_publication']) : date('j F Y');
+        $date_publication = isset($_POST['date_publication']) ? htmlspecialchars(date('Y-m-d', strtotime($_POST['date_publication']))) : date('Y-m-d');
 		$admin_id = isset($_POST['admin_id']) ? htmlspecialchars($_POST['admin_id']) : '';
         $cat_id = isset($_POST['cat_id']) ? htmlspecialchars($_POST['cat_id']) : '';
         $tag_id = isset($_POST['tag_id']) ? htmlspecialchars($_POST['tag_id']) : '';
