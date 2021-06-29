@@ -46,4 +46,6 @@
 		<a href="tagsDelete.php?id=<?php echo $tag['id'] ?>&confirm=no" class="btn btn-danger">Non</a>
 	</div>
 
-<?php echo template_footer()?>
+<?php echo template_footer()?> 
+
+<!-- L'admin peut delete un tag -->
