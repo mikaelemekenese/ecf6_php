@@ -33,8 +33,8 @@
 
         $msg = 'Ajouté avec succès !';
 
-        header('Location: index.php');
-        exit();
+        //header('Location: index.php');
+        //exit();
 	}
 ?>
 
@@ -80,4 +80,3 @@
     </div>
 
 <?php echo template_footer(); ?>
-<!-- gvqyzgdbqugbuyhn -->
