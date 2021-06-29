@@ -53,8 +53,8 @@
                 <textarea type="text" class="form-control" name="contenu" id="contenu" rows="10"></textarea>
             </div>
             <div class="form-group">
-                <label for="date">Date de publication</label>
-                <input type="date" class="form-control" name="date" id="date">
+                <label for="date_publication">Date de publication</label>
+                <input type="date" class="form-control" name="date_publication" id="date_publication">
             </div>
             <div class="form-group">
                 <label for="admin_id">ID Admin</label>
@@ -80,4 +80,3 @@
     </div>
 
 <?php echo template_footer(); ?>
-<!-- gvqyzgdbqugbuyhn -->
