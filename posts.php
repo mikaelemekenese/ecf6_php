@@ -10,6 +10,7 @@
     } else {
         echo "<style>#logout { display:none; }</style>";
         echo "<style>#post-create { display:none; }</style>";
+        echo "<style>#add-post,#edit-post,#delete-post { display:none; }</style>";
     }
     $pdo = pdo_connect_mysql();
 
@@ -37,7 +38,7 @@
     <div class="content read" style="width:90%;">
 
         <div><h2>Liste des posts du blog</h2> 
-        <span><a href="post-create.php" class="add"><i class="fas fa-plus-square fa-xs"></i></a></span></div>
+        <span><a href="post-create.php" class="add" id="add-post"><i class="fas fa-plus-square fa-xs"></i></a></span></div>
 
         <table class="table">
             <thead>
@@ -62,8 +63,8 @@
                     <td><?php echo $post["nom_tag"] ?></td>
                     <td class="actions">
                         <a href="comments.php?billet=<?php echo $post['id']; ?>" class="read-more"><i class="fas fa-book fa-xs"></i></a>
-                        <a href="post-update.php?id=<?php echo $post["id"] ?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
-                        <a href="post-delete.php?id=<?php echo $post["id"] ?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                        <a href="post-update.php?id=<?php echo $post["id"] ?>" class="edit" id="edit-post"><i class="fas fa-pen fa-xs"></i></a>
+                        <a href="post-delete.php?id=<?php echo $post["id"] ?>" class="trash" id="delete-post"><i class="fas fa-trash fa-xs"></i></a>
                     </td>
                 </tr>
                 <?php endforeach; ?>
