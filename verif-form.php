@@ -4,22 +4,29 @@
     $conn= pdo_connect_mysql();
     session_start();
     
-    
-	$query = $conn->prepare("SELECT  titre FROM post WHERE titre LIKE '%Lorem%'");
+    $Lorem=$_POST['search'];
+	$query = $conn->prepare("SELECT  titre , contenu FROM post WHERE titre LIKE '%$Lorem%'");
 	$query->execute();
-    $row = $query->fetch()
+    $row = $query->fetch();
+  
+
+?>
+<?php echo template_header('Accueil'); ?>
+<?php while ($post = $query->fetch()) { ?>
+        <article>
+            <h3>
+                <?php echo htmlspecialchars($post['titre']); ?><br>
+               
+            </h3>
+            <p>
+                <?php echo htmlspecialchars($post['contenu']); ?><br>
+            </p>
+        </article>
+    <?php } $query->closeCursor(); ?>
+
+    <?php echo template_footer(); ?>
     
-    //if(isset($_GET['user'])){
-    //$user = (String) trim($_GET['user']);
- 
-   // $query = $conn->prepare("SELECT *
-   //   FROM post
-   //   WHERE titre  
-  //    LIMIT 10");
    
-  // $query->execute();
-  // $row = $query->fetch()
   
 
   
-?>

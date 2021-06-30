@@ -30,6 +30,7 @@ function template_header($title) {
         <div style="width:auto;">
           <a href="index.php" style="padding-left:20px;"><h1>Blog MYNT</h1></a>
           <a href="index.php"><i class="fas fa-home"></i>Accueil</a>
+          <input class="form-outline" id="search-input" type="search" name="search" placeholder="Que cherchez-vous ?"/>
           <a href="categories.php"><i class="fas fa-address-book"></i>Catégories</a>
           <a href="tagsIndex.php"><i class="fas fa-book"></i>Tags</a>
           <a id="post-create" href="post-create.php"><i class="fas fa-book-reader"></i>Créer un post</a>
