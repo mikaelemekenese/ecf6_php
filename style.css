@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'segoe ui', roboto, oxygen, ubuntu, cantarell,
     'fira sans', 'droid sans', 'helvetica neue', Arial, sans-serif;
@@ -72,12 +72,13 @@ footer p {
 }
 .home-buttons {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33.333333333% 33.333333333% 33.333333333%;
   text-align: center;
   justify-content: center;
+  width: 100%;
 }
 .home-buttons a {
-  width: 90%;
+  width: 80%;
   height: 100px;
   display: grid;
   align-items: center;
