@@ -24,10 +24,11 @@
     
     <div class="container" style="text-align:center;width:100%;">
         <div class="form-outline">
-            <form action="verif-form.php" class="formulaire" style="display:flex;margin-bottom:40px;margin-top:50px;">
-                <input class="form-control" id="search-input" type="search" placeholder="Que cherchez-vous ?"/>
-                <button type="button" class="btn btn-primary">
-                    <i class="fas fa-search"></i> 
+
+            <form action="verif-form.php" class="formulaire" style="display:flex;margin-bottom:80px;margin-top:50px;">
+            <input class="form-control" id="search-input" type="search" name="search" placeholder="Que cherchez-vous ?">
+                
+
                 </button>  
             </form>
         </div>
