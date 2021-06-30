@@ -72,12 +72,13 @@ footer p {
 }
 .home-buttons {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33.333333333% 33.333333333% 33.333333333%;
   text-align: center;
   justify-content: center;
+  width: 100%;
 }
 .home-buttons a {
-  width: 90%;
+  width: 80%;
   height: 100px;
   display: grid;
   align-items: center;
@@ -256,4 +257,11 @@ footer p {
 .posts p {
   text-align: justify;
   margin-top: 10px;
+}
+.article {
+  margin-top: 50px;
+}
+.article p {
+  text-align: justify;
+  margin-bottom: 40px;
 }

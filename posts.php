@@ -12,6 +12,7 @@
         echo "<style>#post-create { display:none; }</style>";
         echo "<style>#add-post,#edit-post,#delete-post { display:none; }</style>";
     }
+    
     $pdo = pdo_connect_mysql();
 
     $pdo_stmt = $pdo->prepare(' SELECT  post.id, 

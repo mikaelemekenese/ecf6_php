@@ -19,10 +19,10 @@
 
         	$id = isset($_POST['id']) && !empty($_POST['id']) && $_POST['id'] != 'auto' ? $_POST['id'] : NULL;
 
-		$titre = isset($_POST['titre']) ? htmlspecialchars($_POST['titre']) : '';
-		$contenu = isset($_POST['contenu']) ? htmlspecialchars($_POST['contenu']) : '';
+		    $titre = isset($_POST['titre']) ? htmlspecialchars($_POST['titre']) : '';
+		    $contenu = isset($_POST['contenu']) ? htmlspecialchars($_POST['contenu']) : '';
         	$date_publication = isset($_POST['date_publication']) ? htmlspecialchars(date('Y-m-d', strtotime($_POST['date_publication']))) : date('Y-m-d');
-		$admin_id = isset($_POST['admin_id']) ? htmlspecialchars($_POST['admin_id']) : '';
+		    $admin_id = isset($_POST['admin_id']) ? htmlspecialchars($_POST['admin_id']) : '';
         	$cat_id = isset($_POST['cat_id']) ? htmlspecialchars($_POST['cat_id']) : '';
         	$tag_id = isset($_POST['tag_id']) ? htmlspecialchars($_POST['tag_id']) : '';
 
@@ -40,7 +40,7 @@
 
 <?php echo template_header('Créer un post'); ?>
 
-<div class="content create">
+    <div class="content create">
         <h2>Ajouter un nouveau post :</h2>
 
         <form action="post-create.php" method="POST">
