@@ -258,3 +258,10 @@ footer p {
   text-align: justify;
   margin-top: 10px;
 }
+.article {
+  margin-top: 50px;
+}
+.article p {
+  text-align: justify;
+  margin-bottom: 40px;
+}

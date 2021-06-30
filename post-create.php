@@ -17,14 +17,14 @@
 
 	if (!empty($_POST)) {
 
-        $id = isset($_POST['id']) && !empty($_POST['id']) && $_POST['id'] != 'auto' ? $_POST['id'] : NULL;
+        	$id = isset($_POST['id']) && !empty($_POST['id']) && $_POST['id'] != 'auto' ? $_POST['id'] : NULL;
 
-		$titre = isset($_POST['titre']) ? htmlspecialchars($_POST['titre']) : '';
-		$contenu = isset($_POST['contenu']) ? htmlspecialchars($_POST['contenu']) : '';
-        $date_publication = isset($_POST['date_publication']) ? htmlspecialchars(date('Y-m-d', strtotime($_POST['date_publication']))) : date('Y-m-d');
-		$admin_id = isset($_POST['admin_id']) ? htmlspecialchars($_POST['admin_id']) : '';
-        $cat_id = isset($_POST['cat_id']) ? htmlspecialchars($_POST['cat_id']) : '';
-        $tag_id = isset($_POST['tag_id']) ? htmlspecialchars($_POST['tag_id']) : '';
+		    $titre = isset($_POST['titre']) ? htmlspecialchars($_POST['titre']) : '';
+		    $contenu = isset($_POST['contenu']) ? htmlspecialchars($_POST['contenu']) : '';
+        	$date_publication = isset($_POST['date_publication']) ? htmlspecialchars(date('Y-m-d', strtotime($_POST['date_publication']))) : date('Y-m-d');
+		    $admin_id = isset($_POST['admin_id']) ? htmlspecialchars($_POST['admin_id']) : '';
+        	$cat_id = isset($_POST['cat_id']) ? htmlspecialchars($_POST['cat_id']) : '';
+        	$tag_id = isset($_POST['tag_id']) ? htmlspecialchars($_POST['tag_id']) : '';
 
 		$pdo_stmt = $pdo->prepare('	INSERT INTO post
 									VALUES 	(?, ?, ?, ?, ?, ?, ?)');
@@ -40,7 +40,7 @@
 
 <?php echo template_header('Créer un post'); ?>
 
-<div class="content create">
+    <div class="content create">
         <h2>Ajouter un nouveau post :</h2>
 
         <form action="post-create.php" method="POST">
@@ -53,8 +53,8 @@
                 <textarea type="text" class="form-control" name="contenu" id="contenu" rows="10"></textarea>
             </div>
             <div class="form-group">
-                <label for="date">Date de publication</label>
-                <input type="date" class="form-control" name="date" id="date">
+                <label for="date_publication">Date de publication</label>
+                <input type="date" class="form-control" name="date_publication" id="date_publication">
             </div>
             <div class="form-group">
                 <label for="admin_id">ID Admin</label>
