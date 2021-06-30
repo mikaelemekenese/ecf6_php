@@ -2,7 +2,7 @@
     include 'functions_custom.php';
 
     session_start();
-
+    
     if (isset($_SESSION['nom_admin']) && isset($_SESSION['mdp'])) {
         $mdp = $_SESSION['mdp'];
         echo "<div class='connected'>Connecté en tant que ". $login = $_SESSION['nom_admin'] ."</div>";
