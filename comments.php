@@ -71,17 +71,19 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($comms as $comm) : ?>
-                <tr>
-                    <td><?php echo $comm["id"] ?></td>
-                    <td><?php echo $comm["user_email"] ?></td>
-                    <td><?php echo $comm["commentaire"] ?></td>
-                    <td><?php echo $comm["date_comm"] ?></td>
-                    <td><?php echo $comm["post_id"] ?></td>
-                    <td class="actions">
-                        <a href="comments-delete.php?id=<?php echo $comm["id"] ?>" class="btn btn-danger" id="delete-comm">Supprimer</a>
-                    </td>
-                </tr>
+                <?php foreach ($comms as $comm) : 
+                    if ($donnees['id'] == $comm['post_id']) : ?>
+                        <tr>
+                            <td><?php echo $comm["id"] ?></td>
+                            <td><?php echo $comm["user_email"] ?></td>
+                            <td><?php echo $comm["commentaire"] ?></td>
+                            <td><?php echo $comm["date_comm"] ?></td>
+                            <td><?php echo $comm["post_id"] ?></td>
+                            <td class="actions">
+                                <a href="comments-delete.php?id=<?php echo $comm["id"] ?>" class="btn btn-danger" id="delete-comm">Supprimer</a>
+                            </td>
+                        </tr>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </tbody>
         </table>
